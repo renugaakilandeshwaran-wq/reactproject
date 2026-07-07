@@ -103,7 +103,6 @@ export default function CaseStudy() {
 
                     <div className="relative z-10">
 
-                        {/* <div className="flex items-center gap-3"> */}
                         <div className="flex justify-between items-center px-6 pt-8">
 
                             <div className="flex items-center gap-2">
@@ -223,7 +222,6 @@ export default function CaseStudy() {
                             <h1 className="text-3xl mt-0 md:text-4xl  lg:text-5xl font-bold leading-tight">
                                 Bento <span className="text-blue-500 w-8 h-8">.</span>
 
-                                {/* <p className="text-[#5468E7] text-7xl self-end mb-2 hidden lg:block lg:-mt-20">.</p> */}
                             </h1>
                         </div>
                         <p className="mt-6 text-gray-500 text-base md:text-lg leading-8 max-w-md mx-auto md:mx-0">
@@ -750,10 +748,6 @@ z-30
 
 
             </section>
-
-
-
-
 
 
             <section className="w-full bg-white py-20 md:py-28 lg:py-32">

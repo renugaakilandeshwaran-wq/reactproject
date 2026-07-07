@@ -46,19 +46,19 @@ function About() {
                 <span className="ml-11 text-gray-500">2021</span>
             </div>
 
-            {/* <div className="md:hidden mt-10 flex flex-col "> */}
-            {/* 
+            <div className="md:hidden mt-10 flex flex-col ">
+
                 <select
                     className=" text-white    w-40"
                 >
                     <option className='bg-black text-white'>2017</option>
                     <option className='bg-black text-white'>2018</option>
                     <option className='bg-black text-white'>2019</option>
-                    <option className='bg-black text-white' selected>2020</option>
+                    <option className='bg-black text-white'>2020</option>
                     <option className='bg-black text-white'>2021</option>
-                </select> */}
+                </select>
 
-            {/* </div> */}
+            </div>
 
 
 
@@ -94,7 +94,6 @@ function About() {
 
                 <div className="flex gap-4 lg:gap-1 mt-8 md:absolute md:right-8 md:top-30 lg:right-0 lg:top-20 z-30">
 
-                    {/* <div className="flex  gap-4 mt-8 relative z-30 lg:mt-0"> */}
                     <button className="w-12 h-12  md:w-12 md:h-12  rounded-full border border-gray-500 flex items-center justify-center lg:mr-10 text-white">
                         <HiOutlineArrowLeft size={22} />
                     </button>
