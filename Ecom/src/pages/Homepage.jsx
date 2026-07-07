@@ -15,7 +15,6 @@ export default function Homepage() {
             overflow-hidden 
             pt-24"
             >
-                {/* Background Pattern */}
                 <img
                     src={path}
                     alt="Pattern"
