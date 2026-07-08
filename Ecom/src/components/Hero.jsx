@@ -69,9 +69,10 @@ function Hero() {
 
 
 
-                <div className="w-full flex justify-center
+                <div className="w-full 
+                flex justify-center
                                 items-center 
-                                
+                                 lg:w-1/2
                                 md:-mt-10 
                                 lg:-mt-20"
                 >

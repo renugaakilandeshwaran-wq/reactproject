@@ -25,8 +25,12 @@ import apply2 from "../assets/apply2.png";
 import logosymbol1 from "../assets/logosymbol1.png";
 import ben3d from "../assets/ben3d.png";
 import ben3 from "../assets/ben3.png";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
+
+
+
 export default function CaseStudy() {
+
     const navigate = useNavigate();
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -38,7 +42,7 @@ export default function CaseStudy() {
         <div className="min-h-screen max-w-[1296px] mx-auto px-4 md:px-8 lg:px-12 py-5">
             <nav className="fixed top-0 left-0 w-full z-50  shadow-md bg-white">
                 <div className="max-w-[1296px] mx-auto flex items-center 
-                           justify-between px-4 md:px-8 lg:px-12 py-5">
+                            justify-between px-4 md:px-8 lg:px-12 py-5">
 
                     {/* Logo */}
                     <div className="flex items-center gap-2">
@@ -57,13 +61,13 @@ export default function CaseStudy() {
 
                     {/* Desktop + Tablet Menu */}
                     <ul className="hidden md:flex items-center gap-5 lg:gap-8 xl:gap-10">
-                        <li><a href="#about" className="hover:text-blue-500">About</a></li>
-                        <li><a href="#works" className="hover:text-blue-500">Works</a></li>
-                        <li><a href="#services" className="hover:text-blue-500">Services</a></li>
+                        <li><Link to="/#about" className="hover:text-blue-500">About</Link></li>
+                        <li><Link to="/#works" onClick={() => setMenuOpen(false)} className="hover:text-blue-500">Works</Link></li>
+                        <li><Link to="/#services" onClick={() => setMenuOpen(false)} className="hover:text-blue-500">Services</Link></li>
                         <li className="flex items-start gap-1">
-                            <a href="#jobs" className="hover:text-blue-500">
+                            <Link to="/#jobs" onClick={() => setMenuOpen(false)} className="hover:text-blue-500">
                                 Jobs
-                            </a>
+                            </Link>
 
                             <span className="w-5 h-5 rounded-full bg-blue-600 text-white text-xs flex items-center -mt-2 justify-center">
                                 2
@@ -128,18 +132,17 @@ export default function CaseStudy() {
                         </div>
 
                         <ul className="flex flex-col gap-8 mt-16 px-8 text-white text-2xl ">
-                            <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
-                            <li><a href="#works" onClick={() => setMenuOpen(false)}>Works</a></li>
-                            <li><a href="#services" onClick={() => setMenuOpen(false)}>Services</a></li>
-                            <li><a href="#jobs" onClick={() => setMenuOpen(false)}>Jobs</a></li>
+                            <li><Link to="/#about" onClick={() => setMenuOpen(false)}>About</Link></li>
+                            <li><Link to="/#works" onClick={() => setMenuOpen(false)}>Works</Link></li>
+                            <li><Link to="/#services" onClick={() => setMenuOpen(false)}>Services</Link></li>
+                            <li><Link to="/#jobs" onClick={() => setMenuOpen(false)}>Jobs</Link></li>
                             <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact Us</a></li>
                         </ul>
-                        <div className="absolute -bottom-30 left-30  -translate-x-1/2">
-                            <img
-                                src={icons}
-                                alt="Social Icons"
-                                className="w-40 h-auto"
-                            />
+                        <div className="absolute bottom-10 left-1/2 -translate-x-1/2">                            <img
+                            src={icons}
+                            alt="Social Icons"
+                            className="w-40 h-auto"
+                        />
                         </div>
                     </div>
 
@@ -150,30 +153,30 @@ export default function CaseStudy() {
             <section
                 id="home"
                 className="max-w-[1296px] 
-            relative 
-            overflow-hidden 
-            mx-auto 
-            px-4 md:px-8 
-            lg:px-5   
-            bg-transparent
-            pt-24
-            md:pt-28
-            "
+                relative 
+                overflow-hidden 
+                mx-auto 
+                px-4 md:px-8 
+                lg:px-5   
+                bg-transparent
+                pt-24
+                md:pt-28
+                "
             >
                 <img
                     src={line1}
                     alt="line"
                     className="
-          hidden
-          lg:block
-          absolute
-          left-[20%]
-          top-25
-          w-[650px]
-          opacity-70
-          h-70
-          pointer-events-none
-        "
+            hidden
+            lg:block
+            absolute
+            left-[20%]
+            top-25
+            w-[650px]
+            opacity-70
+            h-70
+            pointer-events-none
+            "
                 />
 
                 <div className=" relative z-10  flex flex-col-reverse md:flex-row items-center justify-between ">
@@ -182,37 +185,37 @@ export default function CaseStudy() {
                     <div className="w-full md:w-1/2  text-center md:text-left">
 
                         <button className="
+                        hidden
+                        md:flex
                         absolute
                         left-8
                         top-1/2
                         -translate-y-1/2
-                        flex
                         items-center
                         justify-center
                         w-16
                         h-16
-                        lg:-mt-75
                         rounded-full
                         bg-[#5468E7]">
                             <HiOutlineArrowRight
                                 size={28}
                                 className="text-white
-                            
-                            "
+                                
+                                "
                             />
                         </button>
                         <div className="flex flex-col justify-center">
                             <p className="text-white bg-[#FFBA79] 
-                         tracking-[2px]
-                         rounded-[30px] 
-                         
-                         py-3 
-                         w-fit
-                         mt-5
-                         mb-5
-                         
-                         flex
-                        font-semibold">
+                            tracking-[2px]
+                            rounded-[30px] 
+                            
+                            py-3 
+                            w-fit
+                            mt-5
+                            mb-5
+                            
+                            flex
+                            font-semibold">
                                 Featured Project
                             </p>
                         </div>
@@ -241,21 +244,21 @@ export default function CaseStudy() {
                     </div>
 
 
-                    <div className="w-full flex relative justify-center
-                                items-center">
+                    <div className="w-full md:w-1/2 flex relative justify-center
+                                    items-center">
 
                         <img
                             src={bluecase}
                             alt="bluecase"
 
                             className="
-w-full
-max-w-[320px]
-sm:max-w-[420px]
-md:max-w-[520px]
-lg:max-w-[620px]
-h-auto
-object-contain"
+    w-full
+    max-w-[320px]
+    sm:max-w-[420px]
+    md:max-w-[520px]
+    lg:max-w-[620px]
+    h-auto
+    object-contain"
 
                         />
 
@@ -303,7 +306,7 @@ object-contain"
                             🔥 The number of applications and use cases is nearly endless.
                         </p>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 mt-5 gap-5  ">
+                        <div className="grid grid-cols-1  md:grid-cols-2 mt-5 ml-10 gap-5  ">
 
                             {/* Card 1 */}
                             <div className="bg-white rounded-[28px] p-8 w-full max-w-[220px]  shadow-sm border border-gray-100">
@@ -321,7 +324,7 @@ object-contain"
                             </div>
 
                             {/* Card 2 */}
-                            <div className="bg-white rounded-[28px] p-8 w-40 shadow-sm border border-gray-100">
+                            <div className="bg-white rounded-[28px] max-w-[220px] p-8 w-full shadow-sm border border-gray-100">
 
                                 <img
                                     src={icon4}
@@ -358,7 +361,8 @@ object-contain"
                 <img
                     src={line1}
                     alt=""
-                    className="absolute left-0 top-0 h-full opacity-25 pointer-events-none"
+                    className="absolute left-0 top-0 h-full 
+                    opacity-25 pointer-events-none"
                 />
 
                 {/* Background Shape */}
@@ -494,16 +498,18 @@ object-contain"
                     src={line1}
                     alt=""
                     className="
+      hidden
+      lg:block
       absolute
-      inset-0
-      w-100
-     lg: mt-50
-     lg: ml-109
-      
+      top-0
+      right-0
+      w-[400px]
+      xl:w-[500px]
+      h-auto
       object-cover
       pointer-events-none
       z-0
-      opacity-80
+      opacity-40
     "
                 />
 
@@ -581,15 +587,15 @@ object-contain"
             </section>
 
             <section className=" max-w-[1296px]
-            relative
-            overflow-hidden
-            mx-auto
-            px-4 md:px-8
-            lg:px-5
-            bg-transparent
-            pt-24
-            md:pt-28
-            ">
+                relative
+                overflow-hidden
+                mx-auto
+                px-4 md:px-8
+                lg:px-5
+                bg-transparent
+                pt-24
+                md:pt-28
+                ">
 
 
                 <div className="relative mt-40">
@@ -597,14 +603,14 @@ object-contain"
                     {/* Left Background Card */}
                     <div
                         className="
-        hidden lg:block
-        absolute
-        -left-12
-        top-12
-        w-[180px]
-        h-[520px]
-        bg-[#D8EDFB]
-        z-0">
+            hidden lg:block
+            absolute
+            -left-12
+            top-12
+            w-[180px]
+            h-[520px]
+            bg-[#D8EDFB]
+            z-0">
                     </div>
 
                     {/* Right Background Image */}
@@ -612,44 +618,47 @@ object-contain"
                         src={apply2}
                         alt="Apply Background"
                         className="
-    hidden lg:block
-    absolute
-    right-0
-    -top-5
-overflow-visible
-    w-[290px]
-    h-[520px]
 
-    object-cover
-    rounded-[30px]
-    z-20
-  "
+        hidden lg:block
+        absolute
+        right-4
+        xl:right-10
+        top-5
+    overflow-visible
+    w-[260px]
+        lg:w-[290px]
+        lg:h-[520px]
+
+        object-cover
+        rounded-[30px]
+        z-20
+    "
                     />
 
                     {/* Main Blue Card */}
                     <div
                         className="
-        relative
-        bg-[#5468E7]
-        rounded-[40px]
+            relative
+            bg-[#5468E7]
+            rounded-[40px]
 
-        px-8
-        md:px-12
-        lg:px-10
+            px-8
+            md:px-12
+            lg:px-10
 
-        py-12
-        lg:py-20
+            py-12
+            lg:py-20
 
-        flex
-        flex-col
-        lg:flex-row
+            flex
+            flex-col
+            lg:flex-row
 
-        items-center
-        justify-left
+            items-center
+            justify-left
 
-        overflow-hidden
-        z-10
-    "
+            overflow-hidden
+            z-10
+        "
                     >
 
 
@@ -667,12 +676,12 @@ overflow-visible
                                 src={apply}
                                 alt="Apply"
                                 className="
-                w-[260px]
-                sm:w-[340px]
-                md:w-[430px]
-                lg:w-[520px]
-                h-auto
-            "
+                    w-[260px]
+                    sm:w-[340px]
+                    md:w-[430px]
+                    lg:w-[520px]
+                    h-auto
+                "
                             />
 
 
@@ -683,17 +692,19 @@ overflow-visible
                         {/* Right Content */}
                         <div
                             className="
-            w-full
-            lg:w-100
+                                relative
 
-            text-center
-            lg:text-left
+                w-full
+                lg:w-1/2
+                text-center
+                lg:text-left
 
-            mt-12
-            lg:mt-0
-
-            text-white
-        "
+                mt-12
+                lg:mt-0
+    lg:pr-[300px]
+    lg:-ml-16
+                text-white
+            "
                         >
 
                             <p className="text-lg font-medium">
@@ -702,38 +713,38 @@ overflow-visible
 
                             <h2
                                 className="
-                mt-6
+                    mt-6
 
-                text-4xl
-                md:text-4xl
-                lg:text-5xl
-lg:text-left
-z-30
-                font-bold
-                leading-tight
-            "
+                    text-4xl
+                    md:text-4xl
+                    lg:text-5xl
+    lg:text-left
+
+                    font-bold
+                    leading-tight
+                "
                             >
                                 We Are Looking  for Talented Designers
                             </h2>
 
                             <button
                                 className="
-                mt-10
+                    mt-10
 
-                bg-white
-                text-[#5468E7]
+                    bg-white
+                    text-[#5468E7]
 
-                px-10
-                py-4
+                    px-10
+                    py-4
 
-                rounded-xl
+                    rounded-xl
 
-                font-semibold
-                text-lg
+                    font-semibold
+                    text-lg
 
-                hover:scale-105
-                duration-300
-            "
+                    hover:scale-105
+                    duration-300
+                "
                             >
                                 Apply Now
                             </button>
@@ -776,17 +787,17 @@ z-30
                         <button
                             onClick={() => navigate("/case-study")}
                             className="
-          w-16
-          h-16
-          rounded-full
-          bg-[#5468E7]
-          flex
-          items-center
-          justify-center
-          shrink-0
-          hover:scale-105
-          duration-300
-        "
+            w-16
+            h-16
+            rounded-full
+            bg-[#5468E7]
+            flex
+            items-center
+            justify-center
+            shrink-0
+            hover:scale-105
+            duration-300
+            "
                         >
                             <HiOutlineArrowRight
                                 size={28}
@@ -807,29 +818,30 @@ z-30
                             onClick={() => navigate("/case-study")}
                         >
 
-                            <div className="relative overflow-hidden rounded-[28px]
-                             
-        bg-[#FFCE79]
-        
+                            <div className="relative overflow-hidden 
+                            rounded-[28px]
+                                
+            bg-[#FFCE79]
+            
 
-        w-[300px]
-        h-[300px]
+            w-[300px]
+            h-[300px]
 
-        sm:w-[360px]
-        sm:h-[360px]
+            sm:w-[360px]
+            sm:h-[360px]
 
-        md:w-[420px]
-        md:h-[420px]
+            md:w-[420px]
+            md:h-[420px]
 
-        lg:w-[480px]
-        lg:h-[480px]
+            lg:w-[480px]
+            lg:h-[480px]
 
-        flex
-        items-end
-        justify-center
+            flex
+            items-end
+            justify-center
 
-        
-                            ">
+            
+                                ">
 
                                 <img
                                     src={ben3d}
@@ -839,17 +851,17 @@ z-30
 
                                 <span
                                     className="
-              absolute
-              top-6
-              left-6
-              bg-[#9A97ED]
-              text-white
-              text-sm
-              font-medium
-              px-5
-              py-2
-              rounded-full
-            "
+                absolute
+                top-6
+                left-6
+                bg-[#9A97ED]
+                text-white
+                text-sm
+                font-medium
+                px-5
+                py-2
+                rounded-full
+                "
                                 >
                                     Featured Project
                                 </span>
@@ -874,29 +886,29 @@ z-30
                         >
 
                             <div className="relative overflow-hidden rounded-[28px]
-                             
-        bg-[#CFE8FF]
-        rounded-[32px]
+                                
+            bg-[#CFE8FF]
+            rounded-[32px]
 
-        w-[300px]
-        h-[300px]
+            w-[300px]
+            h-[300px]
 
-        sm:w-[360px]
-        sm:h-[360px]
+            sm:w-[360px]
+            sm:h-[360px]
 
-        md:w-[420px]
-        md:h-[420px]
+            md:w-[420px]
+            md:h-[420px]
 
-        lg:w-[480px]
-        lg:h-[480px]
+            lg:w-[480px]
+            lg:h-[480px]
 
-        flex
-        items-end
-        justify-center
+            flex
+            items-end
+            justify-center
 
-        
-                            
-                            ">
+            
+                                
+                                ">
 
                                 <img
                                     src={ben3}
@@ -930,29 +942,29 @@ z-30
                 {/* Rectangle Container */}
                 <div
                     className="
-    relative
+        relative
 
-    w-full
+        w-full
 
-    min-h-[650px]
-    sm:min-h-[750px]
-    md:min-h-[850px]
-    lg:min-h-[720px]
+        min-h-[650px]
+        sm:min-h-[750px]
+        md:min-h-[850px]
+        lg:min-h-[720px]
 
-    rounded-[32px]
-    bg-cover
-    bg-center
-    bg-no-repeat
+        rounded-[32px]
+        bg-cover
+        bg-center
+        bg-no-repeat
 
-    px-6
-    py-8
+        px-6
+        py-8
 
-    md:px-10
-    md:py-10
+        md:px-10
+        md:py-10
 
-    lg:px-16
-    lg:py-14
-  "
+        lg:px-16
+        lg:py-14
+    "
                     style={{ backgroundImage: `url(${rect})` }}
                 >
                     {/* Background Line */}
@@ -960,24 +972,24 @@ z-30
                         src={line1}
                         alt="line"
                         className="
-    absolute
+        absolute
 
-    top-0
-    left-1/2
-    -translate-x-1/2
+        top-0
+        left-1/2
+        -translate-x-1/2
 
-    w-[80%]
-    md:w-[70%]
-    lg:w-[60%]
+        w-[80%]
+        md:w-[70%]
+        lg:w-[60%]
 
-    h-auto
-    opacity-40
+        h-auto
+        opacity-40
 
-    pointer-events-none
-    select-none
+        pointer-events-none
+        select-none
 
-    z-0
-  "
+        z-0
+    "
                     />
                     {/* Background Rectangle */}
                     <img
@@ -989,23 +1001,23 @@ z-30
                     {/* All Content Goes Inside */}
                     <div
                         className="
-    absolute
-    inset-0
+        absolute
+        inset-0
 
-    flex
-    flex-col
+        flex
+        flex-col
 
-    justify-between
+        justify-between
 
-    px-6
-    py-6
+        px-6
+        py-6
 
-    md:px-10
-    md:py-10
+        md:px-10
+        md:py-10
 
-    lg:px-16
-    lg:py-14
-  "
+        lg:px-16
+        lg:py-14
+    "
                     >
 
                         {/* Top */}
@@ -1015,43 +1027,43 @@ z-30
                                 src={logosymbol1}
                                 alt="Logo"
                                 className="
-        w-6
-        sm:w-7
-        md:w-8
-        lg:w-10
-      "
+            w-6
+            sm:w-7
+            md:w-8
+            lg:w-10
+        "
                             />
 
                             <p
                                 className="
-        mt-3
-        text-white
-        text-sm
-        sm:text-base
-        md:text-lg
-      "
+            mt-3
+            text-white
+            text-sm
+            sm:text-base
+            md:text-lg
+        "
                             >
                                 👋 Say hello
                             </p>
 
                             <h2
                                 className="
-        mt-6
+            mt-6
 
-        max-w-4xl
+            max-w-4xl
 
-        text-center
-        text-white
+            text-center
+            text-white
 
-        font-bold
+            font-bold
 
-        text-xl
-        sm:text-3xl
-        md:text-4xl
-        lg:text-5xl
+            text-xl
+            sm:text-3xl
+            md:text-4xl
+            lg:text-5xl
 
-        leading-snug
-      "
+            leading-snug
+        "
                             >
                                 A design team building a curated marketplace for UI designers.
                             </h2>
@@ -1061,32 +1073,32 @@ z-30
                         {/* Bottom */}
                         <div
                             className="
-      mt-4
+        mt-4
 
-      flex
-      flex-col
-      md:flex-row
+        flex
+        flex-col
+        md:flex-row
 
-      items-center
-      justify-between
+        items-center
+        justify-between
 
-      gap-10    "
+        gap-10    "
                         >
 
                             {/* Left */}
                             <h3
                                 className="
-        text-white
+            text-white
 
-        text-2xl
-        md:text-4xl
-        lg:text-5xl
+            text-2xl
+            md:text-4xl
+            lg:text-5xl
 
-        font-bold
+            font-bold
 
-        text-center
-        md:text-left
-      "
+            text-center
+            md:text-left
+        "
                             >
                                 Let's talk <br />
                                 about your <br />
@@ -1096,34 +1108,34 @@ z-30
                             {/* Right */}
                             <div
                                 className="
-        flex
-        flex-col
+            flex
+            flex-col
 
-        items-center
-        md:items-start
-      "
+            items-center
+            md:items-start
+        "
                             >
 
                                 {/* Green Icon */}
                                 <div
                                     className="
-          w-20
-          h-20
-          mb-5">
+            w-20
+            h-20
+            mb-5">
 
                                     <img src={message} alt="" />
                                 </div>
 
                                 <p
                                     className="
-          text-white
+            text-white
 
-          text-lg
-          md:text-xl
+            text-lg
+            md:text-xl
 
-          text-center
-          md:text-left
-        "
+            text-center
+            md:text-left
+            "
                                 >
                                     Invest in your designs <br />
                                     today!
@@ -1131,23 +1143,23 @@ z-30
 
                                 <button
                                     className="
-          mt-6
+            mt-6
 
-          w-12
-          h-12
+            w-12
+            h-12
 
-          rounded-full
+            rounded-full
 
-          border
-          border-white
+            border
+            border-white
 
-          flex
-          items-center
-          justify-center
+            flex
+            items-center
+            justify-center
 
-          text-white
-          text-2xl
-        "
+            text-white
+            text-2xl
+            "
                                 >
                                     →
                                 </button>
@@ -1164,20 +1176,20 @@ z-30
                         src={line1}
                         alt="line"
                         className="
-      absolute
-      top-1/2
-      left-1/2
-      -translate-x-1/2
-      -translate-y-1/2
+        absolute
+        top-1/2
+        left-1/2
+        -translate-x-1/2
+        -translate-y-1/2
 
-      w-[90%]
-      md:w-[75%]
-      lg:w-[60%]
+        w-[90%]
+        md:w-[75%]
+        lg:w-[60%]
 
-      opacity-20
-      pointer-events-none
-      z-0
-    "
+        opacity-20
+        pointer-events-none
+        z-0
+        "
                     />
                     {/* Logo Row */}
                     <div className="flex items-center mt-10 gap-2">
@@ -1199,14 +1211,14 @@ z-30
                     {/* Paragraph */}
                     <p
                         className="
-      mt-6
-      max-w-2xl
-      text-center
-      text-gray-500
-      text-sm
-      sm:text-base
-      leading-7
-    "
+        mt-6
+        max-w-2xl
+        text-center
+        text-gray-500
+        text-sm
+        sm:text-base
+        leading-7
+        "
                     >
                         Agency is a full-service agency, busy designing and building
                         beautiful digital products, brands, and experiences.
@@ -1215,39 +1227,39 @@ z-30
                     {/* Menu */}
                     <ul
                         className="
-      mt-8
-      flex
-      flex-wrap
-      justify-center
-      gap-6
-      lg:gap-10
+        mt-8
+        flex
+        flex-wrap
+        justify-center
+        gap-6
+        lg:gap-10
 
-      text-base
-      font-medium
-    "
+        text-base
+        font-medium
+        "
                     >
                         <li>
-                            <a href="#about" className="hover:text-blue-500">
+                            <Link to="/#about" className="hover:text-blue-500">
                                 About
-                            </a>
+                            </Link>
                         </li>
 
                         <li>
-                            <a href="#works" className="hover:text-blue-500">
+                            <Link to="/#works" className="hover:text-blue-500">
                                 Works
-                            </a>
+                            </Link>
                         </li>
 
                         <li>
-                            <a href="#services" className="hover:text-blue-500">
+                            <Link to="/#services" className="hover:text-blue-500">
                                 Services
-                            </a>
+                            </Link>
                         </li>
 
                         <li>
-                            <a href="#jobs" className="hover:text-blue-500">
+                            <Link to="/#jobs" className="hover:text-blue-500">
                                 Jobs
-                            </a>
+                            </Link>
                         </li>
                     </ul>
 
@@ -1257,28 +1269,28 @@ z-30
                 {/* Bottom Footer */}
                 <div
                     className="
-    mt-16
-    pt-8
-    border-t border-gray-300
+        mt-16
+        pt-8
+        border-t border-gray-300
 
-    flex
-    flex-col
-    md:flex-row
+        flex
+        flex-col
+        md:flex-row
 
-    items-center
-    justify-between
+        items-center
+        justify-between
 
-    gap-6
-  "
+        gap-6
+    "
                 >
 
                     {/* Copyright */}
                     <p
                         className="
-      text-[#232340]
-      text-sm
-      md:text-base
-    "
+        text-[#232340]
+        text-sm
+        md:text-base
+        "
                     >
                         © 2020, UI8 LLC.
                     </p>
@@ -1286,20 +1298,20 @@ z-30
                     {/* Follow Us */}
                     <div
                         className="
-      flex
-      items-center
-      gap-5
-    "
+        flex
+        items-center
+        gap-5
+        "
                     >
 
                         <a
                             href="#"
                             className="
-        text-[#232340]
-        hover:text-[#5468E7]
-        font-medium
-        duration-300
-      "
+            text-[#232340]
+            hover:text-[#5468E7]
+            font-medium
+            duration-300
+        "
                         >
                             Follow us
                         </a>
@@ -1308,11 +1320,11 @@ z-30
                             src={footericon}
                             alt="Social Icons"
                             className="
-        w-[120px]
-        sm:w-[140px]
-        md:w-[160px]
-        h-auto
-      "
+            w-[120px]
+            sm:w-[140px]
+            md:w-[160px]
+            h-auto
+        "
                         />
 
                     </div>

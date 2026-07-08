@@ -601,16 +601,21 @@ function Works() {
                     className="
     hidden lg:block
     absolute
-    right-0
-    -top-5
+    right-4
+    
+    xl:right-10
+    top-5
 overflow-visible
-    w-[290px]
-    h-[520px]
+    w-[260px]
+    lg:w-[290px]
+    h-[480px]
+    lg:h-[520px]
 
     object-cover
     rounded-[30px]
     z-20
   "
+
                 />
 
                 {/* Main Blue Card */}
@@ -654,11 +659,12 @@ overflow-visible
                             src={apply}
                             alt="Apply"
                             className="
-                w-[260px]
-                sm:w-[340px]
-                md:w-[430px]
-                lg:w-[520px]
+                w-[300px]
+                sm:w-[380px]
+                md:w-[470px]
+                lg:w-[560px]
                 h-auto
+                
             "
                         />
 
@@ -670,17 +676,21 @@ overflow-visible
                     {/* Right Content */}
                     <div
                         className="
-            w-full
-            lg:w-100
+        relative
+        w-full
+        lg:w-1/2
 
-            text-center
-            lg:text-left
+        text-center
+        lg:text-left
 
-            mt-12
-            lg:mt-0
+        mt-12
+        lg:mt-0
 
-            text-white
-        "
+        lg:pr-[300px]
+        lg:-ml-16
+
+        text-white
+    "
                     >
 
                         <p className="text-lg font-medium">
@@ -689,38 +699,31 @@ overflow-visible
 
                         <h2
                             className="
-                mt-6
-
-                text-4xl
-                md:text-4xl
-                lg:text-5xl
-lg:text-left
-z-30
-                font-bold
-                leading-tight
-            "
+            mt-6
+            text-4xl
+            md:text-4xl
+            lg:text-5xl
+            lg:text-left
+            font-bold
+            leading-tight
+        "
                         >
-                            We Are Looking  for Talented Designers
+                            We Are Looking for Talented Designers
                         </h2>
 
                         <button
                             className="
-                mt-10
-
-                bg-white
-                text-[#5468E7]
-
-                px-10
-                py-4
-
-                rounded-xl
-
-                font-semibold
-                text-lg
-
-                hover:scale-105
-                duration-300
-            "
+            mt-10
+            bg-white
+            text-[#5468E7]
+            px-10
+            py-4
+            rounded-xl
+            font-semibold
+            text-lg
+            hover:scale-105
+            duration-300
+        "
                         >
                             Apply Now
                         </button>

@@ -178,7 +178,9 @@ function Services() {
                         <img
                             src={phone}
                             alt="Phone"
-                            className="w-[280px] lg:w-[350px]"
+                            className="w-[520px] 
+                            sm:w-[550px] 
+                            lg:w-[550px]"
                         />
                     </div>
 
