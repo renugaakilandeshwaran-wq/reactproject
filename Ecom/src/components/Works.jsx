@@ -1,6 +1,6 @@
 import React from "react";
 import logosymbol from "../assets/logosymbol.png";
-import { HiOutlineArrowRight } from "react-icons/hi2";
+import { HiOutlineArrowRight } from "react-icons/hi";
 import female from "../assets/female.png";
 import female1 from "../assets/female1.png";
 import male from "../assets/male.png";

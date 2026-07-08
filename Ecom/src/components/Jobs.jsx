@@ -1,7 +1,7 @@
 import React from "react";
 import logosymbol from "../assets/logosymbol.png";
 import line1 from "../assets/line1.png";
-import { HiOutlineArrowRight } from "react-icons/hi2";
+import { HiOutlineArrowRight } from "react-icons/hi";
 import ben3d from "../assets/ben3d.png"
 function Jobs() {
     return (

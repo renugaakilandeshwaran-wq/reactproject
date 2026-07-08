@@ -4,7 +4,7 @@ import shape1 from "../assets/shape1.svg"
 import Path from "../assets/Path.png"
 import desktop from "../assets/desktop.png"
 import desktop1 from "../assets/desktop1.png"
-import { HiOutlineArrowLeft, HiOutlineArrowRight } from "react-icons/hi2";
+import { HiOutlineArrowLeft, HiOutlineArrowRight } from "react-icons/hi";
 function About() {
     return (
 

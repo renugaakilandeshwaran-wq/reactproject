@@ -1,7 +1,7 @@
 import React from "react";
 import logosymbol1 from "../assets/logosymbol1.png";
 import path1 from "../assets/path1.png"
-import { HiOutlineArrowRight } from "react-icons/hi2";
+import { HiOutlineArrowRight } from "react-icons/hi";
 import icon1 from "../assets/icon1.png"
 import icon2 from "../assets/icon2.png"
 import icon3 from "../assets/icon3.png"

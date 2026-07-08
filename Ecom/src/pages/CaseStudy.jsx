@@ -5,7 +5,7 @@ import Path from "../assets/Path.png";
 import icons from "../assets/icons.png"
 import bluecase from "../assets/bluecase.png";
 import case1 from "../assets/case1.png";
-import { HiOutlineArrowRight } from "react-icons/hi2";
+import { HiOutlineArrowRight } from "react-icons/hi";
 import line1 from "../assets/line1.png";
 import iben1 from "../assets/iben1.png";
 import iben2 from "../assets/iben2.png";
