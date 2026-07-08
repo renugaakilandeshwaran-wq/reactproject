@@ -1,7 +1,7 @@
 import desktop from "../assets/desktop.png";
 import React, { useState } from "react";
 import logosymbol from "../assets/logosymbol.png";
-import path from "../assets/path.png";
+import Path from "../assets/Path.png";
 import icons from "../assets/icons.png"
 import bluecase from "../assets/bluecase.png";
 import case1 from "../assets/case1.png";
@@ -96,7 +96,7 @@ export default function CaseStudy() {
                 <div className="fixed inset-0 bg-[#0A1F44] z-50 md:hidden">
 
                     <img
-                        src={path}
+                        src={Path}
                         alt="Background"
                         className="absolute top-0 left-0 w-full h-full object-cover opacity-20"
                     />

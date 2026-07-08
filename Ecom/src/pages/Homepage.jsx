@@ -6,7 +6,7 @@ import Jobs from '../components/Jobs';
 import Navbar from '../components/Navbar';
 import Services from '../components/Services';
 import Works from '../components/Works';
-import path from "../assets/path.svg";
+import Path from "../assets/Path.svg";
 
 export default function Homepage() {
     return (
@@ -16,7 +16,7 @@ export default function Homepage() {
             pt-24"
             >
                 <img
-                    src={path}
+                    src={Path}
                     alt="Pattern"
                     className="absolute
                     top-0 
