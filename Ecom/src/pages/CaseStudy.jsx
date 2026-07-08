@@ -25,9 +25,9 @@ import apply2 from "../assets/apply2.png";
 import logosymbol1 from "../assets/logosymbol1.png";
 import ben3d from "../assets/ben3d.png";
 import ben3 from "../assets/ben3.png";
-
+import { useNavigate } from "react-router-dom";
 export default function CaseStudy() {
-
+    const navigate = useNavigate();
     const [menuOpen, setMenuOpen] = useState(false);
 
 
