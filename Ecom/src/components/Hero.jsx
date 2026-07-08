@@ -1,6 +1,5 @@
 import React from 'react'
 import wall1 from "../assets/wall1.png"
-import path from "../assets/path.png";
 function Hero() {
 
     const scrollToSection = (id) => {

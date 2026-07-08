@@ -1,7 +1,7 @@
 import React from 'react'
 import logosymbol from "../assets/logosymbol.png";
 import shape1 from "../assets/shape1.svg"
-import path from "../assets/path.png"
+import Path from "../assets/Path.png"
 import desktop from "../assets/desktop.png"
 import desktop1 from "../assets/desktop1.png"
 import { HiOutlineArrowLeft, HiOutlineArrowRight } from "react-icons/hi2";
@@ -107,7 +107,7 @@ function About() {
 
             {/* Background Path */}
             <img
-                src={path}
+                src={Path}
                 alt="path"
                 className="
     hidden md:block

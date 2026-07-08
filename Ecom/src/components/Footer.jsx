@@ -1,6 +1,5 @@
 import React from "react";
 import footericon from "../assets/footericon.png";
-import Contact from "../assets/Contact.png";
 import rect from "../assets/rect.png";
 import line1 from "../assets/line1.png";
 import logosymbol1 from "../assets/logosymbol1.png";

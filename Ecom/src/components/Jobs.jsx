@@ -345,11 +345,6 @@ function Jobs() {
                     </div>
 
                 </div>
-
-
-
-
-
                 <div>
 
                 </div>

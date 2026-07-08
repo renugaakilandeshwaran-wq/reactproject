@@ -10,19 +10,17 @@ import line1 from "../assets/line1.png";
 import iben1 from "../assets/iben1.png";
 import iben2 from "../assets/iben2.png";
 import case2 from "../assets/case2.png";
-import icon2 from "../assets/icon2.png"
-import icon3 from "../assets/icon3.png"
-import icon4 from "../assets/icon4.png"
+import icon2 from "../assets/icon2.png";
+import icon3 from "../assets/icon3.png";
+import icon4 from "../assets/icon4.png";
 import shape1 from "../assets/shape1.svg";
-import download from "../assets/download.png"
-import Slide from "../assets/Slide.png"
-import case3 from "../assets/case3.png"
+import download from "../assets/download.png";
+import Slide from "../assets/Slide.png";
+import case3 from "../assets/case3.png";
 import apply from "../assets/apply.png";
 import message from "../assets/message.png";
 import rect from "../assets/rect.png";
-import Contact from "../assets/Contact.png";
 import footericon from "../assets/footericon.png";
-
 import apply2 from "../assets/apply2.png";
 import logosymbol1 from "../assets/logosymbol1.png";
 import ben3d from "../assets/ben3d.png";
