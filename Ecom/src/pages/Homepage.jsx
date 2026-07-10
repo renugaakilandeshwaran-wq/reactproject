@@ -15,7 +15,6 @@ export default function Homepage() {
     useEffect(() => {
         if (location.hash) {
             const id = location.hash.replace('#', '');
-            // wait a tick so the section has rendered before scrolling
             setTimeout(() => {
                 const el = document.getElementById(id);
                 if (el) {
@@ -43,11 +42,7 @@ export default function Homepage() {
                     opacity-100 
                     -z-10
                     pointer-events-none"
-
-
-
                 />
-
                 <Navbar />
                 <Hero />
 
