@@ -9,13 +9,13 @@ export default function AboutUs() {
             relative 
             overflow-hidden 
             min-h-screen max-w-[1296px] 
-            mx-auto px-4 md:px-8 
+            mx-auto px-4 md:px-8
             lg:px-12 
             ">
-            <div className='grid  grid-grid-1 lg:grid-cols-2 mt-10 leading-8'>
+            <div className='grid  grid-grid-1 lg:grid-cols-2 mt-10 leading-8 md:text-left text-center item-cener'>
 
                 <div>
-                    <h1 className='text-[#FA2A20] text-start flex-col mt-10   '>
+                    <h1 className='text-[#FA2A20]  mt-5 '>
                         ABOUT US </h1>
                     <p>KNOW MORE TO BE MORE WITH US
                     </p>
@@ -25,7 +25,7 @@ export default function AboutUs() {
                         Vitae pharetra vitae in proin. Odio id arcu egestas eget imperdiet enim amet massa nulla.</p>
                 </div>
                 <div>
-                    <img src={aboutfem} alt="" className=' max-w-lg mt-5  ' />
+                    <img src={aboutfem} alt="" className='  mt-5  ' />
 
                 </div>
             </div>
