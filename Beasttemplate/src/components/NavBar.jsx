@@ -56,7 +56,7 @@ export default function NavBar() {
 
             {/* Mobile Menu */}
             {menuOpen && (
-                <div className="fixed inset-0 bg-white z-[999] md:hidden flex flex-col">
+                <div className="fixed inset-0 bg-white z-[999] md:hidden max-h-[500px] flex flex-col">
 
                     {/* Close Button */}
                     <button
@@ -66,12 +66,12 @@ export default function NavBar() {
                         ✕
                     </button>
 
-                    <div className="flex flex-col pt-24 px-8 text-lg font-medium text-center">
+                    <div className="flex flex-col  px-8 text-lg font-medium text-center">
 
                         <Link
                             to="/#aboutus"
                             onClick={() => setMenuOpen(false)}
-                            className="py-4"
+                            className="py-2"
                         >
                             ABOUT US
                         </Link>
@@ -79,7 +79,7 @@ export default function NavBar() {
                         <Link
                             to="/#facilities"
                             onClick={() => setMenuOpen(false)}
-                            className="py-4"
+                            className="py-2"
                         >
                             FACILITIES
                         </Link>
@@ -87,7 +87,7 @@ export default function NavBar() {
                         <Link
                             to="/#bmi"
                             onClick={() => setMenuOpen(false)}
-                            className="py-4"
+                            className="py-2"
                         >
                             BMI
                         </Link>
@@ -95,7 +95,7 @@ export default function NavBar() {
                         <Link
                             to="/#schedule"
                             onClick={() => setMenuOpen(false)}
-                            className="py-4"
+                            className="py-2"
                         >
                             SCHEDULE
                         </Link>
@@ -103,7 +103,7 @@ export default function NavBar() {
                         <Link
                             to="/#reviews"
                             onClick={() => setMenuOpen(false)}
-                            className="py-4"
+                            className="py-2"
                         >
                             REVIEWS
                         </Link>
@@ -111,7 +111,7 @@ export default function NavBar() {
                         <Link
                             to="/#coaches"
                             onClick={() => setMenuOpen(false)}
-                            className="py-4"
+                            className="py-2"
                         >
                             COACHES
                         </Link>
@@ -119,7 +119,7 @@ export default function NavBar() {
                         <Link
                             to="/#blog"
                             onClick={() => setMenuOpen(false)}
-                            className="py-4"
+                            className="py-2"
                         >
                             BLOG
                         </Link>
@@ -127,7 +127,7 @@ export default function NavBar() {
                         <Link
                             to="/#gallery"
                             onClick={() => setMenuOpen(false)}
-                            className="py-4"
+                            className="py-2"
                         >
                             GALLERY
                         </Link>
@@ -135,7 +135,7 @@ export default function NavBar() {
                         <Link
                             to="/#joinnow"
                             onClick={() => setMenuOpen(false)}
-                            className="mt-8 bg-[#FA2A20] text-white py-3 text-center font-semibold rounded"
+                            className="mt-3 bg-[#FA2A20] text-white py-2 text-center font-semibold rounded"
                         >
                             JOIN NOW
                         </Link>

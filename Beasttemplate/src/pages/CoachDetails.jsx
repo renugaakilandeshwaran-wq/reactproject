@@ -79,7 +79,7 @@ export default function CoachDetails() {
                 </section>
                 <section>
 
-                    <div className="grid grid-cols-1 bg-white gap-5 px-12 mt-10 md:px-12 md:py-6 lg:grid-cols-3  ">
+                    <div className="grid grid-cols-1 bg-white gap-5 px-17 mt-10 md:px-12 md:py-6 lg:grid-cols-3  ">
                         <img src={log1} alt="" />
                         <img src={log2} alt="" />
                         <img src={log3} alt="" />

@@ -23,7 +23,7 @@ export default function JoinNow() {
                 <p className='text-center '>JOIN & BE ONE OF US</p>
             </div>
 
-            <div className="max-w-5xl mx-auto px-4 md:px-8 lg:px-20 mt-10  py-4 max-auto">
+            <div className="max-w-5xl mx-auto px-7 md:px-8 lg:px-20 mt-10  py-4 max-auto">
                 <div className="grid lg:grid-cols-3 lg:gap-0 xl:gap-0 gap-3  ">
                     <div className="h-68 w-72 bg-white border-1 border-black ">
                         <h1 className='text-[#FA2A20] text-center text-xl p-2'><b>BASIC</b></h1>

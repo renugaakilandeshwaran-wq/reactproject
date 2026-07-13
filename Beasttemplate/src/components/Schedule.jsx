@@ -24,7 +24,7 @@ export default function Schedule() {
             <p className='text-center'>KEEP UP WITH THE SCHEDULE TO STAY FIT</p>
             <p className='py-5 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-            <div className='grid grid-cols-1 lg:grid-cols-4 px-6 gap-5 max-auto'>
+            <div className='grid grid-cols-1 lg:grid-cols-4 px-8 gap-5 max-auto'>
                 <img src={sch1} alt="" />
                 <img src={sch2} alt="" />
                 <img src={sch3} alt="" />
